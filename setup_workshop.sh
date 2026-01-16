@@ -36,7 +36,11 @@ fi
 echo "🤖 Installing Antigravity..."
 yay -S --needed --noconfirm antigravity
 
-# 7. VS Code Extensions (Optional but recommended)
+# 7. Install Gemini CLI
+echo "💎 Installing Gemini CLI..."
+npm install -g @google/gemini-cli || echo "⚠️ Gemini CLI installation failed, please install manually"
+
+# 8. VS Code Extensions (Optional but recommended)
 echo "🔌 Installing VS Code Extensions..."
 # Check if code binary exists and install extensions
 if command -v code &> /dev/null; then
